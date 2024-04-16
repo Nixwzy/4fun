@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceito de Portas Lógicas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conceito de Portas Lógicas</h1>
+    <div class="tabs">
+      <button class="tablink" onclick="openTab('and')">AND</button>
+      <button class="tablink" onclick="openTab('nand')">NAND</button>
+      <button class="tablink" onclick="openTab('or')">OR</button>
+      <button class="tablink" onclick="openTab('xor')">XOR</button>
+      <button class="tablink" onclick="openTab('nor')">NOR</button>
+      <button class="tablink" onclick="openTab('not')">NOT</button>
+    </div>
+
+    <div id="and" class="tabcontent">
+      <h2>Porta AND</h2>
+      <div class="inputs">
+        <label for="inputA_and">A</label>
+        <input type="checkbox" id="inputA_and" onclick="calculate('and')">
+        <label for="inputB_and">B</label>
+        <input type="checkbox" id="inputB_and" onclick="calculate('and')">
+      </div>
+      <div id="andResult"></div>
+      <div id="andExplanation"></div>
+    </div>
+
+    <div id="nand" class="tabcontent">
+      <h2>Porta NAND</h2>
+      <div class="inputs">
+        <label for="inputA_nand">A</label>
+        <input type="checkbox" id="inputA_nand" onclick="calculate('nand')">
+        <label for="inputB_nand">B</label>
+        <input type="checkbox" id="inputB_nand" onclick="calculate('nand')">
+      </div>
+      <div id="nandResult"></div>
+      <div id="nandExplanation"></div>
+    </div>
+
+    <div id="or" class="tabcontent">
+      <h2>Porta OR</h2>
+      <div class="inputs">
+        <label for="inputA_or">A</label>
+        <input type="checkbox" id="inputA_or" onclick="calculate('or')">
+        <label for="inputB_or">B</label>
+        <input type="checkbox" id="inputB_or" onclick="calculate('or')">
+      </div>
+      <div id="orResult"></div>
+      <div id="orExplanation"></div>
+    </div>
+
+    <div id="xor" class="tabcontent">
+      <h2>Porta XOR</h2>
+      <div class="inputs">
+        <label for="inputA_xor">A</label>
+        <input type="checkbox" id="inputA_xor" onclick="calculate('xor')">
+        <label for="inputB_xor">B</label>
+        <input type="checkbox" id="inputB_xor" onclick="calculate('xor')">
+      </div>
+      <div id="xorResult"></div>
+      <div id="xorExplanation"></div>
+    </div>
+
+    <div id="nor" class="tabcontent">
+      <h2>Porta NOR</h2>
+      <div class="inputs">
+        <label for="inputA_nor">A</label>
+        <input type="checkbox" id="inputA_nor" onclick="calculate('nor')">
+        <label for="inputB_nor">B</label>
+        <input type="checkbox" id="inputB_nor" onclick="calculate('nor')">
+      </div>
+      <div id="norResult"></div>
+      <div id="norExplanation"></div>
+    </div>
+
+    <div id="not" class="tabcontent">
+      <h2>Porta NOT</h2>
+      <div class="inputs">
+        <label for="inputA_not">A</label>
+        <input type="checkbox" id="inputA_not" onclick="calculate('not')">
+      </div>
+      <div id="notResult"></div>
+      <div id="notExplanation"></div>
+    </div>
+  </div>
+  <div class="watermark">Feito por: GUILHERME MOREIRA LOPES. Para fins de Estudo.</div>
+  <script src="script.js"></script>
+</body>
+</html>
